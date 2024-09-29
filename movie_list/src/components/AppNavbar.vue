@@ -1,8 +1,13 @@
 <template>
   <div class="navbar">
-    <router-link to="/">Movies</router-link>
-    |
-    <router-link to="/favorites">Favorites ({{ favoritesCount }})</router-link>
+    <div class="navbar-content">
+      <router-link to="/" class="nav-item">Movies</router-link>
+      <router-link to="/favorites" class="nav-item"
+        >Favorites ({{ favoritesCount }})</router-link
+      >
+      <router-link to="/about" class="nav-item">About</router-link>
+      <router-link to="/contact" class="nav-item">Contact</router-link>
+    </div>
   </div>
 </template>
 
@@ -10,7 +15,7 @@
 export default {
   computed: {
     favoritesCount() {
-      return this.$store.getters.totalFavorites; // Assicurati di mantenere il codice formattato correttamente
+      return this.$store.getters.totalFavorites;
     },
   },
 };
@@ -21,15 +26,21 @@ export default {
   background-color: #333;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar a {
-  color: white; /* Assicurati che i link siano bianchi */
-  text-decoration: none; /* Rimuovi la sottolineatura dai link */
-  margin-left: 10px; /* Aggiungi margine tra i link */
+.navbar-content {
+  display: flex;
+  gap: 20px;
 }
 
-.navbar a:hover {
-  text-decoration: underline; /* Aggiungi un effetto hover sui link */
+.nav-item {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }
 </style>
