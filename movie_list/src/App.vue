@@ -2,8 +2,10 @@
   <div id="app">
     <header>
       <div class="header-content">
-        <img src="./assets/images/film_logo.svg" alt="Logo" class="logo" />
-        <h1 class="site-title">PICKAFILM</h1>
+        <router-link to="/" class="header-link">
+          <img src="./assets/images/film_logo.svg" alt="Logo" class="logo" />
+          <h1 class="site-title">PICKAFILM</h1>
+        </router-link>
       </div>
     </header>
     <AppNavbar />
@@ -84,6 +86,13 @@ header {
 
 .header-content {
   display: flex; /* Usa flexbox per il contenuto dell'header */
+  align-items: center; /* Allinea verticalmente al centro */
+}
+
+.header-link {
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+  color: white; /* Colore del testo del link */
+  display: flex; /* Flexbox per allineare logo e titolo */
   align-items: center; /* Allinea verticalmente al centro */
 }
 
