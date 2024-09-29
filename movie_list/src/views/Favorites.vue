@@ -18,7 +18,7 @@
 import MovieCard from "@/components/MovieCard.vue";
 
 export default {
-  name: "FavoritesPage", // Nome del componente aggiornato
+  name: "FavoritesPage",
   components: {
     MovieCard,
   },
@@ -29,12 +29,8 @@ export default {
   },
   methods: {
     toggleFavorite(filmId) {
-      if (this.isFavorite(filmId)) {
-        this.$store.commit("REMOVE_FROM_FAVORITES", filmId);
-      }
-    },
-    isFavorite(filmId) {
-      return this.favorites.some((film) => film.id === filmId);
+      // Rimuovi il film dai preferiti
+      this.$store.commit("REMOVE_FROM_FAVORITES", filmId);
     },
   },
 };
