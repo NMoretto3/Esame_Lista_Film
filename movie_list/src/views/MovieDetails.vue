@@ -74,7 +74,9 @@ export default {
   methods: {
     submitReview() {
       const newReview = {
-        ...this.review,
+        name: this.review.name,
+        rating: this.review.rating,
+        comment: this.review.comment,
         filmId: Number(this.id),
       };
       this.$store.commit("ADD_REVIEW", newReview);
