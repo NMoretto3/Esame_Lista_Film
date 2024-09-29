@@ -28,7 +28,7 @@ export default {
   methods: {
     // Controlla se un film è nei preferiti
     isFavorite(filmId) {
-      return this.$store.state.favorites.some((film) => film.id === filmId); // Aggiunta delle parentesi
+      return this.$store.state.favorites.some((film) => film.id === filmId);
     },
     // Toggle del film tra preferiti e non preferiti
     toggleFavorite(filmId) {
@@ -47,9 +47,30 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Grid responsiva per i film */
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsiva: 1 colonna per schermi stretti, più colonne per schermi più larghi */
   gap: 20px;
+  padding: 20px;
+}
+
+/* Adatta lo stile a schermi piccoli */
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Colonne più strette su tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: 1fr; /* Una colonna su schermi molto piccoli, come cellulari */
+  }
 }
 </style>
