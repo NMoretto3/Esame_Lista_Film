@@ -10,7 +10,6 @@
     </header>
     <AppNavbar />
 
-    <!-- Carosello Bootstrap -->
     <div class="container mt-4">
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -52,11 +51,9 @@
         </div>
       </div>
     </div>
-    <!-- FINE Carosello -->
 
     <router-view />
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2024 - Nicolò Moretto, Cesare Nai, Antonio Rodofile</p>
     </footer>
@@ -76,34 +73,34 @@ export default {
 
 <style>
 header {
-  background-color: #2c3e50; /* Colore di sfondo */
-  color: white; /* Colore del testo */
-  padding: 20px; /* Padding */
-  display: flex; /* Usa flexbox */
-  align-items: center; /* Allinea verticalmente al centro */
-  justify-content: center; /* Centra orizzontalmente */
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-content {
-  display: flex; /* Usa flexbox per il contenuto dell'header */
-  align-items: center; /* Allinea verticalmente al centro */
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
-  text-decoration: none; /* Rimuove la sottolineatura dal link */
-  color: white; /* Colore del testo del link */
-  display: flex; /* Flexbox per allineare logo e titolo */
-  align-items: center; /* Allinea verticalmente al centro */
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 50px; /* Imposta la larghezza dell'icona */
-  height: auto; /* Mantiene le proporzioni */
-  margin-right: 10px; /* Distanza tra l'icona e il titolo */
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .site-title {
-  margin: 0; /* Rimuove il margine predefinito del titolo */
+  margin: 0;
 }
 
 #app {
@@ -114,54 +111,47 @@ header {
   color: #2c3e50;
 }
 
-/* Imposta l'altezza massima del carosello e mantiene le proporzioni */
 .carousel-inner img {
-  max-height: 500px; /* Imposta l'altezza massima */
-  width: auto; /* Mantiene le proporzioni dell'immagine */
-  margin: auto; /* Centra l'immagine */
+  max-height: 500px;
+  width: auto;
+  margin: auto;
 }
 
-/* Stile per il footer */
 footer {
-  background-color: #2c3e50; /* Colore di sfondo del footer */
-  color: white; /* Colore del testo */
-  padding: 10px 0; /* Padding superiore e inferiore */
-  position: relative; /* Puoi cambiare in 'absolute' se vuoi che il footer resti in fondo alla pagina */
-  bottom: 0; /* Posiziona il footer in fondo */
-  width: 100%; /* Larghezza del footer */
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Rimuovi gli stili per i bottoni del carosello */
 .carousel-control-prev,
 .carousel-control-next {
-  display: none; /* Nasconde i bottoni */
+  display: none;
 }
 
-/* Media Queries per la responsività */
-
-/* Schermi piccoli (mobile) */
 @media (max-width: 768px) {
   .logo {
-    width: 40px; /* Riduci la dimensione del logo */
+    width: 40px;
   }
 
   .site-title {
-    font-size: 1.5rem; /* Riduci la dimensione del titolo */
+    font-size: 1.5rem;
   }
 
   .carousel-inner img {
-    max-height: 300px; /* Imposta un'altezza massima per le immagini */
+    max-height: 300px;
   }
 }
 
-/* Schermi extra piccoli (mobile più piccolo) */
 @media (max-width: 480px) {
   .logo {
-    width: 30px; /* Ulteriore riduzione della dimensione del logo */
+    width: 30px;
   }
 
   .site-title {
-    font-size: 1.2rem; /* Ulteriore riduzione della dimensione del titolo */
+    font-size: 1.2rem;
   }
 }
 </style>
