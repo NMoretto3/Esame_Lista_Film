@@ -1,7 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import MovieList from "../views/MovieList.vue";
 import MovieDetails from "../views/MovieDetails.vue";
-import AddReview from "../views/AddReview.vue";
 import Favorites from "../views/Favorites.vue";
 import AboutPage from "../views/AboutPage.vue"; // Importa il nuovo componente AboutPage
 import ContactPage from "../views/ContactPage.vue"; // Importa il nuovo componente ContactPage
@@ -17,11 +16,6 @@ const routes = [
     name: "movie-details",
     component: MovieDetails,
     props: true,
-  },
-  {
-    path: "/add-review",
-    name: "add-review",
-    component: AddReview,
   },
   {
     path: "/favorites",
