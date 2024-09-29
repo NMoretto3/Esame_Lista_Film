@@ -5,16 +5,22 @@
       <h4 class="title">{{ film.title }} ({{ film.year }})</h4>
       <p>Director: {{ film.director }}</p>
     </router-link>
-    <button @click="addToFavorites">Add to Favorites</button>
+    <button @click="toggleFavorite">
+      {{ isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti' }}
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["film"],
+  props: {
+    film: Object,
+    isFavorite: Boolean, // Aggiungi la prop isFavorite
+  },
   methods: {
-    addToFavorites() {
-      this.$store.commit("ADD_TO_FAVORITES", this.film.id);
+    toggleFavorite() {
+      // Emit an event to the parent component to toggle the favorite status
+      this.$emit('toggle-favorite');
     },
   },
 };

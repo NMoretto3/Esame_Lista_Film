@@ -10,7 +10,7 @@ export default createStore({
         year: 2010,
         director: "Christopher Nolan",
         description:
-          "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+          "Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale giapponese.",
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
         image: require("../assets/images/inception_locandina.jpg"), // Corretto percorso
       },
@@ -20,7 +20,7 @@ export default createStore({
         year: 2008,
         director: "Christopher Nolan",
         description:
-          "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+          "Batman e Jim Gordon si alleano con il nuovo procuratore di Gotham City, Harvey Dent, per combattere il crimine organizzato che dilaga in città e fermare un pericoloso rapinatore, il Joker, che ha gettato la città nell'anarchia.",
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         image: require("../assets/images/il_cavaliere_oscuro_locandina.jpg"), // Corretto percorso
       },
@@ -30,7 +30,7 @@ export default createStore({
         year: 1990,
         director: "Martin Scorsese",
         description:
-          "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.",
+          "Un americano di origini italo irlandesi fa carriera nella mafia newyorchese degli anni 50, ma la vita da gangster riserva delle sorprese non previste.",
         cast: ["Robert De Niro", "Ray Liotta", "Joe Pesci"],
         image: require("../assets/images/quei_bravi_ragazzi_locandina.jpg"), // Corretto percorso
       },
@@ -40,7 +40,7 @@ export default createStore({
         year: 1942,
         director: "Michael Curtiz",
         description:
-          "A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis.",
+          "Casablanca, 1941: la città pullula di profughi che tentano di ottenere il visto per gli Stati Uniti d'America. Prima di venir catturato dalla polizia coloniale francese, Ugarte affida a Rick, proprietario del Café Américain, alcune lettere di transito in bianco sottratte a due tedeschi uccisi.",
         cast: ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"],
         image: require("../assets/images/casablanca_locandina.jpg"), // Corretto percorso
       },
@@ -50,7 +50,7 @@ export default createStore({
         year: 1999,
         director: "Lana Wachowski, Lilly Wachowski",
         description:
-          "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+          "Esistono due realtà: una è l'esistenza che conduciamo ogni giorno, l'altra è nascosta. Neo vuole scoprire la verità su Matrix, mondo virtuale elaborato al computer creato per tenere sotto controllo le persone. Morpheus potrebbe aiutarlo.",
         cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         image: require("../assets/images/matrix_locandina.jpg"), // Corretto percorso
       },
@@ -66,7 +66,7 @@ export default createStore({
       }
     },
     ADD_REVIEW(state, review) {
-      state.reviews.push(review);
+      state.reviews.push(review); // Aggiunta la recensione allo stato
     },
   },
   getters: {
