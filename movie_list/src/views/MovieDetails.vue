@@ -96,7 +96,7 @@ export default {
 }
 
 .film-image {
-  width: 100%;
+  width: 250px;
   height: auto;
   border-radius: 8px;
   margin-bottom: 20px;
