@@ -43,14 +43,14 @@ export default {
 }
 button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #2c3e50;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #bfe003;
 }
 </style>
