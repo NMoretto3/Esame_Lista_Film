@@ -107,7 +107,7 @@ header {
 
 /* Imposta l'altezza massima del carosello e mantiene le proporzioni */
 .carousel-inner img {
-  max-height: 300px; /* Imposta l'altezza massima */
+  max-height: 500px; /* Imposta l'altezza massima */
   width: auto; /* Mantiene le proporzioni dell'immagine */
   margin: auto; /* Centra l'immagine */
 }
