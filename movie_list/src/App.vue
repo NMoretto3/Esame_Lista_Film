@@ -127,4 +127,32 @@ footer {
 .carousel-control-next {
   display: none; /* Nasconde i bottoni */
 }
+
+/* Media Queries per la responsività */
+
+/* Schermi piccoli (mobile) */
+@media (max-width: 768px) {
+  .logo {
+    width: 40px; /* Riduci la dimensione del logo */
+  }
+
+  .site-title {
+    font-size: 1.5rem; /* Riduci la dimensione del titolo */
+  }
+
+  .carousel-inner img {
+    max-height: 300px; /* Imposta un'altezza massima per le immagini */
+  }
+}
+
+/* Schermi extra piccoli (mobile più piccolo) */
+@media (max-width: 480px) {
+  .logo {
+    width: 30px; /* Ulteriore riduzione della dimensione del logo */
+  }
+
+  .site-title {
+    font-size: 1.2rem; /* Ulteriore riduzione della dimensione del titolo */
+  }
+}
 </style>
